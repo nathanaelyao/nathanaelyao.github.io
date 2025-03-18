@@ -45,7 +45,7 @@ nav ul li a {
 }
 
 .section h2 {
-    text-align: center;
+    text-align: left; /* Change to left alignment */
     margin-bottom: 30px;
 }
 
@@ -57,6 +57,7 @@ nav ul li a {
 
 .project h3 {
     margin-top: 0;
+    text-align: left; /* change to left align */
 }
 
 footer {
@@ -77,4 +78,24 @@ a:hover {
 ul {
   list-style-type: disc;
   margin-left: 20px;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+}
+
+.profile-image {
+    width: 200px; /* Adjust as needed */
+    margin-right: 30px;
+}
+
+.profile-image img {
+    width: 100%;
+    border-radius: 50%; /* Optional: for a circular image */
+    object-fit: cover;
+}
+
+.about-text{
+  flex-grow: 1;
 }
