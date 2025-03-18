@@ -45,7 +45,7 @@ nav ul li a {
 }
 
 .section h2 {
-    text-align: left; /* Change to left alignment */
+    text-align: center;
     margin-bottom: 30px;
 }
 
@@ -57,7 +57,6 @@ nav ul li a {
 
 .project h3 {
     margin-top: 0;
-    text-align: left; /* change to left align */
 }
 
 footer {
