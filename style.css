@@ -45,7 +45,7 @@ nav ul li a {
 }
 
 .section h2 {
-    text-align: center;
+    text-align: left;
     margin-bottom: 30px;
 }
 
@@ -57,6 +57,7 @@ nav ul li a {
 
 .project h3 {
     margin-top: 0;
+    text-align: left;
 }
 
 footer {
@@ -75,8 +76,8 @@ a:hover {
 }
 
 ul {
-  list-style-type: disc;
-  margin-left: 20px;
+    list-style-type: disc;
+    margin-left: 20px;
 }
 
 .about-content {
@@ -85,7 +86,7 @@ ul {
 }
 
 .profile-image {
-    width: 350px; 
+    width: 200px;
     margin-right: 30px;
 }
 
@@ -95,17 +96,32 @@ ul {
     object-fit: cover;
 }
 
-.about-text{
-  flex-grow: 1;
+.about-text {
+    flex-grow: 1;
 }
+
 .project-image {
-    width: 100%; 
-    max-height: 200px; 
-    overflow: hidden; 
+    width: 100%;
+    max-height: 200px;
+    overflow: hidden;
     margin-bottom: 10px;
 }
 
 .project-image img {
     width: 100%;
-    object-fit: cover; 
+    object-fit: cover;
+}
+
+.scrollable-image {
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.scrollable-image img {
+    display: inline-block;
+    width: auto;
+    height: 100%;
+    object-fit: contain; /* Or use "cover" if you prefer */
+    margin-right: 5px; /* Add spacing between images */
 }
