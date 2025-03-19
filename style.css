@@ -86,7 +86,7 @@ ul {
 }
 
 .profile-image {
-    width: 300px;
+    width: 350px;
     margin-right: 30px;
 }
 
@@ -107,8 +107,7 @@ ul {
 
 .image-gallery {
     display: flex;
-    overflow-x: auto;
-    max-height: 33vh; /* Set maximum height to one third of the viewport height */
+    max-height: 33vh;
     white-space: nowrap;
 }
 
@@ -116,4 +115,16 @@ ul {
     max-height: 100%;
     object-fit: contain;
     margin-right: 5px;
+}
+
+/* Mobile-Specific Styles */
+@media (max-width: 768px) {
+    .image-gallery {
+        overflow-x: auto; /* Enable scrolling on mobile */
+        justify-content: center; /* Center images on mobile */
+    }
+
+    .gallery-image{
+        margin: 0 5px; /* add spacing between images on mobile*/
+    }
 }
