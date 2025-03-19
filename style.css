@@ -123,6 +123,7 @@ ul {
 
     .gallery-image{
         width: calc(100% / 4); 
+    }
 }
 /* Mobile-Specific Styles */
 @media (max-width: 768px) {
@@ -132,7 +133,9 @@ ul {
     }
 
     .profile-image {
-        margin: 0 0 20px 0;
+        margin: 20px;
+        width: 100%;
+
     }
 
     .image-gallery {
