@@ -109,22 +109,29 @@ ul {
     display: flex;
     max-height: 33vh;
     white-space: nowrap;
+    overflow-x: auto;
+
 }
 
 .gallery-image {
     max-height: 100%;
     object-fit: contain;
     margin-right: 5px;
+    
 }
+@media (min-width: 768px) {
 
+    .gallery-image{
+        width: calc(100% / 4); /* If there are 5 images, each takes up 1/5th of the space */
+    }
+}
 /* Mobile-Specific Styles */
 @media (max-width: 768px) {
     .image-gallery {
-        overflow-x: auto; /* Enable scrolling on mobile */
-        justify-content: center; /* Center images on mobile */
+        justify-content: center; 
     }
 
     .gallery-image{
-        margin: 0 5px; /* add spacing between images on mobile*/
+        margin: 0 5px; 
     }
 }
