@@ -86,14 +86,14 @@ ul {
 }
 
 .profile-image {
-    width: 200px;
+    width: 150px; /* Reduced profile image size */
     margin-right: 30px;
 }
 
 .profile-image img {
     width: 100%;
     border-radius: 50%;
-    object-fit: cover;
+    object-fit: contain; /* Ensure full image is visible */
 }
 
 .about-text {
@@ -104,24 +104,3 @@ ul {
     width: 100%;
     max-height: 200px;
     overflow: hidden;
-    margin-bottom: 10px;
-}
-
-.project-image img {
-    width: 100%;
-    object-fit: cover;
-}
-
-.scrollable-image {
-    overflow-x: auto;
-    white-space: nowrap;
-    width: 100%;
-}
-
-.scrollable-image img {
-    display: inline-block;
-    width: auto;
-    height: 100%;
-    object-fit: contain; /* Changed from cover to contain */
-    margin-right: 5px; /* Add spacing between images */
-}

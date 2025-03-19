@@ -28,7 +28,7 @@
             </div>
             <div class="about-text">
             <p>
-                Hello! I'm Your Nathanael, a masters computer science student graduating in April 2025. Last year, I held a Mitacs funded research internship at Telus. I have also been a full stack Developer at VisaPlace and Mesh Scheduling Inc. in the past.
+                Hello! I'm Your Nathanael, a masters computer science student graduating in April 2025. Last year, I held a Mitacs funded research internship at Telus. I have also previously worked as a Software Developer at VisaPlace and Mesh Scheduling Inc.
             </p>
             <p>
                 Some of my interests include snowboarding, soccer and backpacking!
@@ -40,44 +40,59 @@
         <div class="container">
             <h2>Projects</h2>
             <div class="project">
-                <div class="project-image">
-                    <div class="scrollable-image">
-                        <img src="images/sec1.PNG" alt="Project 1 Image">
-                        <img src="images/sec2.PNG" alt="Project 1 Image">
-                        <img src="images/sec3.PNG" alt="Project 1 Image">
-                        <img src="images/sec4.PNG" alt="Project 1 Image">
 
-                    </div>
-                </div>
 
                 <h3>SEC Filings Visualizer App</h3>
                 <p>App that uses the SEC EDGAR API to visualize company data and 13F filings.</p>
                 <p><strong>Technologies:</strong> React Native/Expo, TypeScript, SQLite, Cheerio, REST APIs</p>
                 <a href="https://github.com/nathanaelyao/SEC-Edgar-Visualizer" target="_blank">GitHub Repository</a>
+                <div class="project-image">
+                    <div class="image-slider" id="project1-slider">
+                        <img src="images/sec1.PNG" alt="Project 1 Image" class="slider-image">
+                        <img src="images/sec2.PNG" alt="Project 1 Image" class="slider-image">
+                        <img src="images/sec3.PNG" alt="Project 1 Image" class="slider-image">
+                        <img src="images/sec4.PNG" alt="Project 1 Image" class="slider-image">
+
+                    </div>
+                    <div class="slider-controls">
+                        <button onclick="prevImage('project1-slider')">&lt;</button>
+                        <button onclick="nextImage('project1-slider')">&gt;</button>
+                    </div>
+                </div>
             </div>
 
             <div class="project">
-                <div class="project-image">
-                    <div class="scrollable-image">
-                        <img src="images/train-e.png" alt="Project 2 Image">
-                    </div>                
-                </div>
+
 
                 <h3>Train-e</h3>
                 <p>Contributed to the development of an e-training website for a client in the insurance industry.</p>
                 <p><strong>Technologies:</strong> Next.js, TypeScript, GraphQL, Amazon S3</p>
+                <div class="project-image">
+                    <div class="image-slider" id="project1-slider">
+                        <img src="images/train-e.png" alt="Project 2 Image" class="slider-image">
+                    </div>  
+                    <div class="slider-controls">
+                        <button onclick="prevImage('project1-slider')">&lt;</button>
+                        <button onclick="nextImage('project1-slider')">&gt;</button>
+                    </div>              
+                </div>
             </div>
 
              <div class="project">
-                <div class="project-image">
-                    <div class="scrollable-image">
-                        <img src="images/color_memory.png" alt="Project 3 Image">
-                    </div>
-                </div>
+
                 <h3>Color Memory</h3>
                 <p>A simple memory test game with over 1000 downloads on the Play Store.</p>
                 <p><strong>Technologies:</strong> Java, Android Studio</p>
                 <a href="https://play.google.com/store/apps/details?id=com.nathanaelyao123.memoryblocks" target="_blank">Google Play Listing</a>
+                <div class="project-image">
+                    <div class="image-slider" id="project1-slider">
+                        <img src="images/color_memory.png" alt="Project 3 Image" class="slider-image">
+                    </div>
+                    <div class="slider-controls">
+                        <button onclick="prevImage('project1-slider')">&lt;</button>
+                        <button onclick="nextImage('project1-slider')">&gt;</button>
+                    </div>
+                </div>
             </div>
             </div>
     </section>
