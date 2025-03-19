@@ -86,7 +86,7 @@ ul {
 }
 
 .profile-image {
-    width: 350px;
+    width: 150px;
     margin-right: 30px;
 }
 
@@ -117,21 +117,28 @@ ul {
     max-height: 100%;
     object-fit: contain;
     margin-right: 5px;
-    
 }
 @media (min-width: 768px) {
 
     .gallery-image{
-        width: calc(100% / 4); /* If there are 5 images, each takes up 1/5th of the space */
-    }
+        width: calc(100% / 4); 
 }
 /* Mobile-Specific Styles */
 @media (max-width: 768px) {
+    .about-content {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .profile-image {
+        margin: 0 0 20px 0;
+    }
+
     .image-gallery {
-        justify-content: center; 
+        justify-content: center;
     }
 
     .gallery-image{
-        margin: 0 5px; 
+        margin: 0 5px;
     }
 }
