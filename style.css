@@ -86,14 +86,14 @@ ul {
 }
 
 .profile-image {
-    width: 150px; /* Reduced profile image size */
+    width: 150px;
     margin-right: 30px;
 }
 
 .profile-image img {
     width: 100%;
     border-radius: 50%;
-    object-fit: contain; /* Ensure full image is visible */
+    object-fit: contain;
 }
 
 .about-text {
@@ -102,5 +102,18 @@ ul {
 
 .project-image {
     width: 100%;
-    max-height: 200px;
-    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.image-gallery {
+    display: flex;
+    overflow-x: auto;
+    max-height: 33vh; /* Set maximum height to one third of the viewport height */
+    white-space: nowrap;
+}
+
+.gallery-image {
+    max-height: 100%;
+    object-fit: contain;
+    margin-right: 5px;
+}
