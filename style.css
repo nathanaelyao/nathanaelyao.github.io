@@ -106,6 +106,7 @@ ul {
 }
 
 .image-gallery {
+    margin-top: 10px;
     display: flex;
     max-height: 33vh;
     white-space: nowrap;
